@@ -6,16 +6,54 @@ Data Structures:
 
     Deque
 
+    HashSet
+
     Binary Tree
+
+    HashMap
+
+    
 
 
 Libraries:
 
-    Collections
+    Comparator: INTERFACE
+        - used to order the objects of classes and capable of comparing two objects of the same class
 
-    Array.sort
+        Methods:
+
+            compare(T o1, T o2) -> returns negative, 0, or positive number if less than, equal, greater than
+
+            naturalOrder() -> returns a comparator that orders things in Natural Order
+            
+            reverseOrder() -> returns a Comparator that orders things in reverse Natural Order
 
     
+        EXAMPLE:
+
+            class Sortbyname implements Comparator<Student> 
+            {
+            
+
+                public int compare(int a, int b)
+                {
+            
+                    return a - b
+                }
+            }
+
+            Collections.sort(Object List, new Sortbyname)
+
+
+
+
+Array.sort
+
+Iterator
+
+
+
+
 
 Algorithms: 
 

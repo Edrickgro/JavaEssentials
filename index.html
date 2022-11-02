@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-16">
+        <title>"Java Essentials"</title>
+
+        <link href="./main.css" rel="stylesheet" type = "text/css">
+
+        
+
+    </head>
+
+    
+
+    <div>
+        <div>
+            <h1>Data Structures</h1>
+        </div>
+
+        <div class = "headers">
+            <a href = "https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html">Heap : PriorityQueue Class</a>
+        </div>
+
+        <div class = "bodies">
+                <ul>
+                    <li><a>A list or graph/tree</a></li>
+                    <li><a>Orders elements based on max or min</a></li>
+                    <li><a>Max: All children are smaller</a></li> 
+                    <li><a>Min: All children are greater</a></li>
+                </ul>
+    
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>   Min:    PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();  
+   Max:    PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());</pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    offer/add(E e) -> Boolean
+    contains(Object o) -> Boolean
+    peek() -> head of Queue
+    poll() -> head of Queue, removes
+    size() -> int
+    clear() -> Clears Queue
+    toArray() -> Object[]
+    iterator() -> Iterator<E> </pre>
+    
+
+            <a class = "subHeaders">
+                Complexities
+            </a>
+
+            
+            <ul>
+                <li><a>O(log n) - > enqueu and dequeu</a></li>
+                <li><a>O(n) - > remove() and contains()</a></li>
+                <li><a>O(1) - > peek(), element(), size()</a></li> 
+            </ul>
+        
+    
+            </div>
+    
+            <div class = "headers">
+                <a href = "https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html">Stack</a>
+            </div>
+            
+            <div class = "bodies">
+                <ul>
+                    <li><a>(LIFO) - Last In First Out</a></li>
+                </ul>
+
+
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>   Stack<Integer> stack = new Stack<Integer>();</pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    empty() -> Boolean
+    peek() -> element at top of list
+    pop() -> element at top, removes
+    push(E item) -> pushes element to top
+    search(Object o) -> index of Object </pre>
+
+                <a class = "subHeaders"> Complexities</a>
+
+                <ul>
+                    <li><a>O(1) - > push(), pop(), top()</a></li>
+                    <li><a>O(n) - > search()</a></li> 
+                </ul>
+                
+            </div>
+    
+            <div class = "headers">
+                <a href = "https://docs.oracle.com/javase/7/docs/api/java/util/Deque.html">Deque: Interface</a> 
+            </div>
+
+            <div class = "bodies">
+                <ul>
+                    <li><a>(LIFO) - Last In First Out</a></li>
+                    <li><a>(FIFO) - First In First Out</a></li>
+                </ul>
+
+
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>  Deque<Integer> myDeque = new ArrayDeque<Integer>();</pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    add() -> Boolean True, tail of deque
+    addFirst() -> void, head of deque
+    contains(Object o) -> boolean
+    peekFirst() -> no removal, null if empty
+    peekLast() -> no removal, null if empty
+    pollFirst() -> removal, null if empty
+    pollLast() -> removal, null if empty
+    size() -> int
+    removeFirstOccurrence(Object o) -> E </pre>
+    
+
+                <a class = "subHeaders"> Complexities</a>
+
+                <ul>
+                    <li><a>O(1) - > push(), pop(), top()</a></li>
+                    <li><a>O(n) - > removeFirstOccurrence()</a></li> 
+                </ul>
+
+
+            </div>
+
+
+            
+            <div class = "headers">
+                <a href = "https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html">HashSet</a> 
+            </div>
+
+            <div class = "bodies">
+                <ul>
+                    <li><a>Collection of UNIQUE items</a></li>
+                </ul>
+
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>   HashSet<String> cars = new HashSet<String>();</pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    add() -> Boolean True, true if not present
+    clear() -> void
+    contains(Object o) -> boolean
+    isEmpty() -> boolean, true if empty
+    remove(Object o) -> boolean, removes if present
+    size() -> int </pre>
+    
+
+                <a class = "subHeaders"> Complexities</a>
+
+                <ul>
+                    <li><a>O(1) - > average, (contains) </a></li>
+                </ul>
+            </div>
+
+
+            <div class = "headers">
+                <a>HashMap</a>
+            </div>
+
+
+            <div class = "bodies">
+                <ul>
+                    <li><a>(LIFO) - Last In First Out</a></li>
+                    <li><a>(FIFO) - First In First Out</a></li>
+                </ul>
+
+
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>  Deque<Integer> myDeque = new ArrayDeque<Integer>();</pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    add() -> Boolean True, tail of deque
+    addFirst() -> void, head of deque
+    contains(Object o) -> boolean
+    peekFirst() -> no removal, null if empty
+    peekLast() -> no removal, null if empty
+    pollFirst() -> removal, null if empty
+    pollLast() -> removal, null if empty
+    size() -> int
+    removeFirstOccurrence(Object o) -> E </pre>
+    
+
+                <a class = "subHeaders"> Complexities</a>
+
+                <ul>
+                    <li><a>O(1) - > push(), pop(), top()</a></li>
+                    <li><a>O(n) - > removeFirstOccurrence()</a></li> 
+                </ul>
+
+
+            </div>
+
+
+            
+            <div class = "headers">
+                <a href = "https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html">HashMap</a> 
+            </div>
+
+            <div class = "bodies">
+                <ul>
+                    <li><a>Collection of UNIQUE items</a></li>
+                </ul>
+
+                <a class = "subHeaders">
+                    Example
+                </a>
+    
+                <pre>   HashMap<String, String> capitalCities = new HashMap<String, String>();
+   map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+                </pre>  
+                
+                <a class = "subHeaders">
+                    Methods
+                </a>
+    
+                <pre>
+    put() -> key, value
+    remove() -> void
+    isEmpty() -> Boolean
+    size() -> int
+    remove(Object o) -> boolean, removes if present
+    keySet() -> Set<K> </pre>
+    
+
+                <a class = "subHeaders"> Complexities</a>
+
+                <ul>
+                    <li><a>O(1) - > average, (contains) </a></li>
+                </ul>
+
+            </div>
+    
+            <div class = "headers">
+                <a>Binary Tree</a>
+            </div>
+            
+    
+            
+    
+        </div>
+
+    </div>
+
+
+    <div>
+       <div>
+            <h1>Libraries</h1>
+       </div>
+
+
+       <div class = "headers">
+            <a href = "">Comparator: Interface</a>
+
+       </div>
+ 
+    </div>
+
+
+
+
+
+
+</html>
